@@ -78,7 +78,7 @@ Execute
 Each keybinding begins with
 .Ic Mod
 which defaults to
-.Ic ^g
+.Ic ^a
 but can be changed in
 .Pa config.h
 or with the
@@ -86,13 +86,13 @@ or with the
 command line option.
 .
 .Bl -tag -width 8
-.It Ic Mod-c
+.It Ic Mod-n
 Create a new shell window.
 .
-.It Ic Mod-C
+.It Ic Mod-N
 Create a new shell window using the current working directory of the focused window.
 .
-.It Ic Mod-x-x
+.It Ic Mod-q
 Close focused window.
 .
 .It Ic Mod-l
@@ -103,10 +103,10 @@ fullscreen layout).
 Decreases the master area width about 5% (all except grid and
 fullscreen layout).
 .
-.It Ic Mod-i
+.It Ic Mod-o
 Increase number of windows displayed in the master area.
 .
-.It Ic Mod-d
+.It Ic Mod-O
 Decrease number of windows displayed in the master area.
 .
 .It Ic Mod-j
@@ -128,7 +128,7 @@ Focus window to the left.
 Focus window to the right.
 .
 .It Ic Mod-[0..9]
-Focus the [0..9]-th window.
+Move to the [0..9]-th tag.
 .
 .It Ic Mod-Tab
 Focus previously selected window.
@@ -136,7 +136,7 @@ Focus previously selected window.
 .It Ic Mod-.
 Toggle minimization of current window.
 .
-.It Ic Mod-m
+.It Ic Mod-f
 Maximize current window (change to fullscreen layout).
 .
 .It Ic Shift-PageUp
@@ -147,25 +147,16 @@ Scroll up.
 .It Ic Mod-PageDown
 Scroll down.
 .
-.It Ic Mod-Space
-Toggle between defined layouts (affects all windows).
-.
-.It Ic Mod-Enter
+.It Ic Mod-m
 Zooms/cycles current window to/from master area.
 .
-.It Ic Mod-f
+.It Ic Mod-t
 Change to vertical stack tiling layout.
 .
 .It Ic Mod-b
-Change to bottom stack tiling layout.
-.
-.It Ic Mod-g
-Change to grid layout.
-.
-.It Ic Mod-s
 Show/hide the status bar.
 .
-.It Ic Mod-S
+.It Ic Mod-B
 Toggle position of the status bar between top and bottom.
 .
 .It Ic Mod-r
@@ -214,7 +205,7 @@ Apply nth tag to focused window.
 .It Ic Mod-T-[1..n]
 Add/remove nth tag to/from focused window.
 .
-.It Ic Mod-q-q
+.It Ic Mod-E
 Quit dvtm.
 .El
 .
